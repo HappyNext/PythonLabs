@@ -11,21 +11,18 @@ def calculate_revenue(tickets_sold_A, tickets_sold_B, tickets_sold_C, price_A, p
     revenue_B = tickets_sold_B * price_B
     revenue_C = tickets_sold_C * price_C
     total_revenue = revenue_A + revenue_B + revenue_C
-    return revenue_A, revenue_B, revenue_C, total_revenue
+    print(f"Доход от продажи билетов класса A: {revenue_A} грн")
+    print(f"Доход от продажи билетов класса B: {revenue_B} грн")
+    print(f"Доход от продажи билетов класса C: {revenue_C} грн")
+    print(f"Общий доход: {total_revenue} грн")
 
 # Ввод цен на билеты для каждого класса
-price_A = float(input("Введите цену билета класса A: "))
-price_B = float(input("Введите цену билета класса B: "))
-price_C = float(input("Введите цену билета класса C: "))
+price_A = 30.4
+price_B = 51.5
+price_C = 101.5
 
 # Ввод количества проданных билетов для каждого класса
 tickets_sold_A, tickets_sold_B, tickets_sold_C = input_tickets_sold()
 
 # Расчет дохода от продажи билетов для каждого класса и в целом
-revenue_A, revenue_B, revenue_C, total_revenue = calculate_revenue(tickets_sold_A, tickets_sold_B, tickets_sold_C, price_A, price_B, price_C)
-
-# Вывод результатов
-print(f"Доход от продажи билетов класса A: {revenue_A} грн")
-print(f"Доход от продажи билетов класса B: {revenue_B} грн")
-print(f"Доход от продажи билетов класса C: {revenue_C} грн")
-print(f"Общий доход: {total_revenue} грн")
+calculate_revenue(tickets_sold_A, tickets_sold_B, tickets_sold_C, price_A, price_B, price_C)

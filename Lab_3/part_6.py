@@ -19,7 +19,7 @@ def read_list(data):
     for _ in range(len(data)):
         pass
 
-N = 100000
+N = 1000000
 data_list = [i for i in range(N)]  # Створення списку
 data_tuple = tuple(data_list)       # Перетворення списку в кортеж
 

@@ -32,15 +32,15 @@ def process_lists(input_file, output_file):
     with open(output_file, 'a') as f:
         for lst in lists:
             sorted_lst = quick_sort(lst)
-            f.write(f"Sorted list: {sorted_lst}\n")
+            f.write(f"Відсортований список: {sorted_lst}\n")
             value = 10
-            f.write(f"Element {value} exists: {search_element(lst, value)}\n")
+            f.write(f"Елемент {value} включено в список?: {search_element(lst, value)}\n")
             p = 5
-            f.write(f"First {p} min elements: {search_first_p_min(lst, p)}\n")
+            f.write(f"Перші {p} min елементи: {search_first_p_min(lst, p)}\n")
             avg = arithmetic_mean(lst)
-            f.write(f"Arithmetic mean: {avg}\n")
+            f.write(f"Середнє арифметичне: {avg}\n")
             no_duplicates_lst = remove_duplicates(lst)
-            f.write(f"List without duplicates: {no_duplicates_lst}\n")
+            f.write(f"Список без дублікатів: {no_duplicates_lst}\n")
             f.write("\n")
 
 # Виклик функції для обробки списків з файлу 'input.txt' та запису результатів у файл 'output.txt'

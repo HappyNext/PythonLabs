@@ -3,4 +3,4 @@ def check(a,b,c):
         return True
     else:
         return False
-print(check(5,9,11))
+print(check(5,10,11))

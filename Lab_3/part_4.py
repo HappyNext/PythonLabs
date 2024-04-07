@@ -23,6 +23,6 @@ def count_positive_halves(*args):
 
 
 # Пример использования функции
-sequence = [1, -2, 3, 4, -5, 6, 7, -8]
+sequence = [1, -2, -3, -4, -5, 6, 7, -8]
 result = count_positive_halves(*sequence)
 print(result)
